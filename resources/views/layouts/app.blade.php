@@ -67,6 +67,7 @@ href="{{ asset('assets/css/style.css') }}">
 <link href="{{ asset('assets/css/footer.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/page-navigation.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/pages/about.css') }}" rel="stylesheet">
 
 
 </head>
@@ -104,6 +105,7 @@ href="{{ asset('assets/css/style.css') }}">
 <!-- Custom JS -->
 <script src="{{ asset('assets/js/header.js') }}"></script>
 <script src="{{ asset('assets/js/page-navigation.js') }}"></script>
+<script src="{{ asset('assets/js/about-page.js') }}"></script>
 <script src="{{ asset('assets/js/scroll-top.js') }}"></script>
 
 <script src="{{ asset('assets/js/main.js') }}"></script>

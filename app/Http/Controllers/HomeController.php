@@ -10,6 +10,11 @@ class HomeController extends Controller
 
     public function home()
     {
-        return view('home.index');
+        return view('components.index');
+    }
+
+    public function about()
+    {
+        return view('components.company.about');
     }
 }

@@ -14,7 +14,7 @@
             <div class="carousel-item active">
 
                 <div class="hero-slide"
-                     style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80');">
+     style="background-image:url('{{ asset('assets/images/hero/hero-slide4.png') }}');">
 
                     <div class="hero-overlay"></div>
 
@@ -100,7 +100,7 @@
             <div class="carousel-item">
 
                 <div class="hero-slide"
-                     style="background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80');">
+     style="background-image:url('{{ asset('assets/images/hero/hero-slide2.png') }}');">
 
                     <div class="hero-overlay"></div>
 
@@ -160,8 +160,8 @@
 
             <div class="carousel-item">
 
-                <div class="hero-slide"
-                     style="background-image:url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1920&q=80');">
+                 <div class="hero-slide"
+     style="background-image:url('{{ asset('assets/images/hero/hero-slide3.png') }}');">
 
                     <div class="hero-overlay"></div>
 

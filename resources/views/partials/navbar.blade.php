@@ -66,7 +66,7 @@
                             <div class="dropdown-box">
 
 
-                                <a href="#">
+                                <a href="{{route('about')}}">
                                     About Us
                                 </a>
 
