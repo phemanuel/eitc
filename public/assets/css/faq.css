@@ -1,0 +1,303 @@
+/*==================================================
+FAQ SECTION
+==================================================*/
+
+.faq-section{
+
+    position:relative;
+
+    padding:80px 0;
+
+    background:#ffffff;
+
+    overflow:hidden;
+
+}
+
+
+.faq-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    right:-150px;
+
+    bottom:-150px;
+
+    background:rgba(95,213,208,.08);
+
+    border-radius:50%;
+
+    filter:blur(80px);
+
+}
+
+
+.faq-section .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/*==================================================
+FAQ WRAPPER
+==================================================*/
+
+
+.faq-wrapper{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+
+/*==================================================
+FAQ ITEM
+==================================================*/
+
+
+.faq-item{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    border:1px solid rgba(13,10,99,.08);
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.04);
+
+    transition:.35s ease;
+
+}
+
+
+.faq-item:hover{
+
+    box-shadow:0 20px 45px rgba(15,23,42,.08);
+
+}
+
+
+
+/*==================================================
+QUESTION BUTTON
+==================================================*/
+
+
+.faq-question{
+
+    width:100%;
+
+    padding:25px 30px;
+
+    border:0;
+
+    background:transparent;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    text-align:left;
+
+    color:#24324B;
+
+    font-size:1.05rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+
+
+.faq-question i{
+
+    width:32px;
+
+    height:32px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#F1F5F9;
+
+    color:#1E8BFF;
+
+    font-size:1.2rem;
+
+    transition:.35s ease;
+
+    flex-shrink:0;
+
+}
+
+
+
+/* Rotate icon when open */
+
+.faq-question:not(.collapsed) i{
+
+    transform:rotate(45deg);
+
+    background:#0D0A63;
+
+    color:#ffffff;
+
+}
+
+
+
+/*==================================================
+ANSWER
+==================================================*/
+
+
+.faq-answer{
+
+    padding:0 30px 25px;
+
+}
+
+
+.faq-answer p{
+
+    margin:0;
+
+    color:#6B7280;
+
+    line-height:1.8;
+
+    font-size:.95rem;
+
+}
+
+
+
+/*==================================================
+BOTTOM CONTACT CTA
+==================================================*/
+
+
+.faq-contact{
+
+    margin-top:60px;
+
+    padding:40px;
+
+    border-radius:28px;
+
+    background:linear-gradient(
+        135deg,
+        #F8FAFC,
+        #EEF6FF
+    );
+
+    border:1px solid rgba(30,139,255,.08);
+
+}
+
+
+
+.faq-contact h4{
+
+    color:#0D0A63;
+
+    font-weight:700;
+
+    font-size:1.5rem;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.faq-contact p{
+
+    color:#6B7280;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.faq-contact .btn{
+
+    border-radius:50px;
+
+    padding:14px 32px;
+
+    font-weight:600;
+
+}
+
+
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+
+@media(max-width:767px){
+
+
+    .faq-section{
+
+        padding:60px 0;
+
+    }
+
+
+    .faq-question{
+
+        padding:20px;
+
+        font-size:.95rem;
+
+    }
+
+
+    .faq-answer{
+
+        padding:0 20px 20px;
+
+    }
+
+
+    .faq-contact{
+
+        padding:30px 20px;
+
+        border-radius:22px;
+
+    }
+
+
+}

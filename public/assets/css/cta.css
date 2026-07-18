@@ -1,0 +1,401 @@
+/*==================================================
+CTA SECTION
+==================================================*/
+
+.cta-section{
+
+    position:relative;
+
+    padding:80px 0;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+}
+
+
+.cta-wrapper{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    padding:70px 80px;
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #0D0A63 0%,
+        #1627A6 55%,
+        #1E8BFF 100%
+    );
+
+    box-shadow:0 30px 70px rgba(13,10,99,.25);
+
+}
+
+
+
+/*==================================================
+BACKGROUND EFFECTS
+==================================================*/
+
+
+.cta-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    top:-120px;
+
+    right:-80px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+
+
+.cta-wrapper::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+
+    height:250px;
+
+    bottom:-120px;
+
+    left:-80px;
+
+    border-radius:50%;
+
+    background:rgba(95,213,208,.15);
+
+}
+
+
+
+.cta-content,
+.cta-image{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+/*==================================================
+CTA CONTENT
+==================================================*/
+
+
+.cta-content{
+
+    max-width:720px;
+
+}
+
+
+
+.cta-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.12);
+
+    color:#ffffff;
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    margin-bottom:25px;
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+.cta-content h2{
+
+    color:#ffffff;
+
+    font-size:2.7rem;
+
+    line-height:1.25;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.cta-content p{
+
+    color:rgba(255,255,255,.85);
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+
+
+/*==================================================
+BUTTONS
+==================================================*/
+
+
+.cta-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.cta-buttons .btn{
+
+    border-radius:50px;
+
+    padding:15px 32px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+
+
+.cta-buttons .btn-light{
+
+    color:#0D0A63;
+
+}
+
+
+
+.cta-buttons .btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+
+/*==================================================
+ICON / IMAGE AREA
+==================================================*/
+
+
+.cta-circle{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    backdrop-filter:blur(15px);
+
+    animation:ctaFloat 4s ease-in-out infinite;
+
+}
+
+
+
+.cta-circle i{
+
+    font-size:5rem;
+
+    color:#5FD5D0;
+
+}
+
+
+
+@keyframes ctaFloat{
+
+
+    0%,
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+
+}
+
+
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+
+@media(max-width:991px){
+
+
+    .cta-wrapper{
+
+        padding:60px 45px;
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+    .cta-content{
+
+        max-width:100%;
+
+    }
+
+
+    .cta-buttons{
+
+        justify-content:center;
+
+    }
+
+
+}
+
+
+
+@media(max-width:767px){
+
+
+    .cta-section{
+
+        padding:60px 0;
+
+    }
+
+
+    .cta-wrapper{
+
+        padding:40px 25px;
+
+        border-radius:25px;
+
+    }
+
+
+    .cta-content h2{
+
+        font-size:2rem;
+
+    }
+
+
+    .cta-content p{
+
+        font-size:.95rem;
+
+    }
+
+
+    .cta-circle{
+
+        width:130px;
+
+        height:130px;
+
+    }
+
+
+    .cta-circle i{
+
+        font-size:3.5rem;
+
+    }
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    .cta-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+
+    .cta-buttons .btn{
+
+        width:100%;
+
+    }
+
+
+}

@@ -1,0 +1,559 @@
+:root{
+
+--primary:#0B132B;
+--secondary:#1C2541;
+--blue:#2563EB;
+--teal:#00C2A8;
+--orange:#F59E0B;
+
+--light:#F8FAFC;
+--text:#334155;
+
+}
+
+
+body{
+
+font-family:'Inter',sans-serif;
+color:var(--text);
+}
+
+
+h1,h2,h3,h4,h5{
+
+font-family:'Space Grotesk',sans-serif;
+
+}
+
+
+.section-padding{
+
+padding:100px 0;
+
+}
+
+
+.btn-main{
+
+background:var(--blue);
+color:white;
+padding:14px 35px;
+border-radius:50px;
+transition:.3s;
+
+}
+
+
+.btn-main:hover{
+
+background:#1D4ED8;
+color:white;
+
+}
+
+
+/*==================================================
+HEADER
+==================================================*/
+
+#site-header{
+    position: relative;
+    z-index: 1000;
+}
+
+/*==========================
+TOP HEADER
+==========================*/
+
+.top-header{
+
+    background: linear-gradient(90deg,#07153B,#0D0A63);
+
+    color:#fff;
+
+    height:44px;
+
+    display:flex;
+
+    align-items:center;
+
+    font-size:14px;
+
+}
+
+.header-contact{
+
+    display:flex;
+
+    gap:30px;
+
+    align-items:center;
+
+}
+
+.header-contact a,
+.header-contact span{
+
+    color:rgba(255,255,255,.85);
+
+    text-decoration:none;
+
+}
+
+.header-contact i{
+
+    color:#5FD5D0;
+
+    margin-right:8px;
+
+}
+
+.header-social{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+}
+
+.header-social a{
+
+    width:32px;
+
+    height:32px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.header-social a:hover{
+
+    background:#5FD5D0;
+
+}
+
+
+/* MEGA menu */
+
+/*=========================================================
+NAVIGATION
+=========================================================*/
+
+.main-menu{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:40px;
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.main-menu>li{
+
+    position:relative;
+
+}
+
+.main-menu>li>a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    text-decoration:none;
+
+    color:#24324B;
+
+    font-weight:600;
+
+    font-size:15px;
+
+    padding:34px 0;
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+.main-menu>li>a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:22px;
+
+    width:0;
+
+    height:3px;
+
+    border-radius:20px;
+
+    background:linear-gradient(90deg,#1E8BFF,#5FD5D0);
+
+    transition:.35s;
+
+}
+
+.main-menu>li:hover>a{
+
+    color:#1E8BFF;
+
+}
+
+.main-menu>li:hover>a::after{
+
+    width:100%;
+
+}
+
+.main-menu i{
+
+    font-size:11px;
+
+    transition:.3s;
+
+}
+
+.main-menu li:hover>a i{
+
+    transform:rotate(180deg);
+
+}
+
+/*=========================================================
+SMALL DROPDOWN
+=========================================================*/
+
+.dropdown-box{
+
+    position:absolute;
+
+    top:100%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    min-width:240px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+}
+
+.menu-dropdown:hover>.dropdown-box{
+
+    opacity:1;
+
+    visibility:visible;
+
+    margin-top:15px;
+
+}
+
+.dropdown-box a{
+
+    display:block;
+
+    padding:16px 24px;
+
+    color:#24324B;
+
+    text-decoration:none;
+
+}
+
+.dropdown-box a:hover{
+
+    background:#F5FAFF;
+
+    color:#1E8BFF;
+
+}
+
+/*=========================================================
+MEGA MENU
+=========================================================*/
+
+.mega{
+
+    position:static;
+
+}
+
+.mega-menu{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    top:100%;
+
+    width:1150px;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.10);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+}
+
+.menu-dropdown:hover>.mega-menu{
+
+    opacity:1;
+
+    visibility:visible;
+
+    margin-top:18px;
+
+}
+
+.mega-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr 320px;
+
+}
+
+/*=========================================================
+LEFT COLUMNS
+=========================================================*/
+
+.mega-column{
+
+    padding:40px;
+
+}
+
+.mega-column h5{
+
+    margin-bottom:25px;
+
+    color:#0D0A63;
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+.mega-item{
+
+    display:flex;
+
+    gap:16px;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    margin-bottom:14px;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.mega-item:hover{
+
+    background:#F7FBFF;
+
+}
+
+.mega-item i{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:14px;
+
+    background:linear-gradient(135deg,#1E8BFF,#5FD5D0);
+
+    color:#fff;
+
+    font-size:22px;
+
+    flex-shrink:0;
+
+}
+
+.mega-item strong{
+
+    display:block;
+
+    color:#24324B;
+
+    margin-bottom:5px;
+
+}
+
+.mega-item span{
+
+    color:#64748B;
+
+    font-size:14px;
+
+}
+
+/*=========================================================
+RIGHT PANEL
+=========================================================*/
+
+.mega-promo{
+
+    background:linear-gradient(180deg,#07153B,#0D0A63);
+
+    color:#fff;
+
+    padding:45px 35px;
+
+}
+
+.mega-promo span{
+
+    color:#5FD5D0;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+}
+
+.mega-promo h4{
+
+    margin:20px 0;
+
+    line-height:1.5;
+
+    font-size:28px;
+
+}
+
+.mega-promo p{
+
+    color:rgba(255,255,255,.8);
+
+    margin-bottom:25px;
+
+}
+
+.mega-promo ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 30px;
+
+}
+
+.mega-promo li{
+
+    margin-bottom:14px;
+
+}
+
+.mega-promo li i{
+
+    color:#5FD5D0;
+
+    margin-right:8px;
+
+}
+
+.mega-promo .btn-brand{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+/*=========================================================
+RESPONSIVE
+=========================================================*/
+
+@media(max-width:1200px){
+
+    .mega-menu{
+
+        width:1000px;
+
+    }
+
+}
+
+@media(max-width:991px){
+
+    .mega-menu,
+
+    .dropdown-box{
+
+        display:none;
+
+    }
+
+}
+
+
+
