@@ -553,6 +553,10 @@ RESPONSIVE
 
     }
 
+    html {
+    scroll-behavior: smooth;
+}
+
 }
 
 

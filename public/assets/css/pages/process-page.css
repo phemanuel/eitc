@@ -1,0 +1,507 @@
+/*========================================
+    PROCESS HERO
+========================================*/
+
+.process-hero{
+
+    position:relative;
+
+    min-height:85vh;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #0D0A63,
+        #1E8BFF
+    );
+
+}
+
+.process-overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(95,213,208,.25),
+    transparent 40%);
+
+}
+
+.process-hero h1{
+
+    color:#fff;
+
+    font-size:58px;
+
+    line-height:1.15;
+
+    font-weight:700;
+
+    margin:20px 0;
+
+}
+
+.process-hero h1 span{
+
+    color:#5FD5D0;
+
+}
+
+.process-hero p{
+
+    color:rgba(255,255,255,.88);
+
+    line-height:1.9;
+
+    font-size:18px;
+
+    max-width:620px;
+
+}
+
+.process-hero-image{
+
+    position:relative;
+
+}
+
+.process-hero-image img{
+
+    width:100%;
+
+    height:560px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.20);
+
+}
+
+.floating-process-card{
+
+    position:absolute;
+
+    left:-30px;
+
+    bottom:30px;
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:center;
+
+    width:290px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+.floating-process-card i{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#0D0A63;
+
+    color:#fff;
+
+    font-size:26px;
+
+}
+
+.floating-process-card h5{
+
+    margin:0;
+
+    color:#24324B;
+
+}
+
+.floating-process-card p{
+
+    margin:6px 0 0;
+
+    color:#64748B;
+
+    font-size:13px;
+
+}
+
+@media(max-width:992px){
+
+.process-hero{
+
+padding:90px 0;
+
+}
+
+.process-hero h1{
+
+font-size:42px;
+
+}
+
+.process-hero-image img{
+
+height:420px;
+
+margin-top:40px;
+
+}
+
+.floating-process-card{
+
+left:15px;
+
+}
+
+}
+
+/*=================================================
+        DELIVERY FRAMEWORK
+==================================================*/
+
+.delivery-framework{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+}
+
+.process-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    margin-top:70px;
+
+}
+
+.process-card{
+
+    position:relative;
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:40px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    border:1px solid rgba(13,10,99,.06);
+
+    box-shadow:0 18px 45px rgba(15,23,42,.06);
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 60px rgba(15,23,42,.12);
+
+}
+
+.process-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:6px;
+
+    height:100%;
+
+    background:linear-gradient(
+        #0D0A63,
+        #1E8BFF,
+        #5FD5D0
+    );
+
+}
+
+.process-number{
+
+    position:absolute;
+
+    top:18px;
+
+    right:22px;
+
+    font-size:60px;
+
+    font-weight:800;
+
+    color:rgba(13,10,99,.05);
+
+    line-height:1;
+
+}
+
+.process-icon{
+
+    width:78px;
+
+    height:78px;
+
+    border-radius:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(
+        135deg,
+        #0D0A63,
+        #1E8BFF
+    );
+
+    color:#fff;
+
+    font-size:34px;
+
+    margin-bottom:30px;
+
+}
+
+.process-card h4{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#24324B;
+
+    margin-bottom:18px;
+
+}
+
+.process-card p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.process-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.process-card li{
+
+    position:relative;
+
+    padding-left:28px;
+
+    margin-bottom:12px;
+
+    color:#24324B;
+
+    font-weight:500;
+
+}
+
+.process-card li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:#1E8BFF;
+
+    font-weight:700;
+
+}
+
+.process-card:hover .process-icon{
+
+    transform:rotate(-8deg) scale(1.08);
+
+    transition:.35s;
+
+}
+
+@media (max-width:992px){
+
+.process-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media (max-width:768px){
+
+.delivery-framework{
+
+padding:80px 0;
+
+}
+
+.process-grid{
+
+grid-template-columns:1fr;
+
+gap:25px;
+
+}
+
+.process-card{
+
+padding:30px;
+
+}
+
+.process-number{
+
+font-size:48px;
+
+}
+
+}
+/*=========================================
+    PROCESS BENEFITS
+=========================================*/
+
+.process-benefits{
+
+    padding:110px 0;
+
+    background:#F8FAFC;
+
+}
+
+.benefit-card{
+
+    background:#fff;
+
+    padding:40px 35px;
+
+    border-radius:26px;
+
+    text-align:center;
+
+    height:100%;
+
+    transition:.35s;
+
+    border:1px solid rgba(13,10,99,.05);
+
+    box-shadow:0 12px 30px rgba(15,23,42,.05);
+
+}
+
+.benefit-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 55px rgba(15,23,42,.10);
+
+}
+
+.benefit-icon{
+
+    width:75px;
+
+    height:75px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:#EEF6FF;
+
+    color:#1E8BFF;
+
+    font-size:32px;
+
+}
+
+.benefit-card h4{
+
+    color:#24324B;
+
+    margin-bottom:15px;
+
+}
+
+.benefit-card p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+/*=========================================
+    QUALITY SECTION
+=========================================*/
+
+.quality-section{
+
+    padding:120px 0;
+
+    background:#fff;
+
+}
+
+.quality-section img{
+
+    border-radius:30px;
+
+}

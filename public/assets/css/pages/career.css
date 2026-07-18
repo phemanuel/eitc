@@ -1,0 +1,756 @@
+/*=========================================
+        CAREERS HERO
+=========================================*/
+
+.careers-hero{
+
+    position:relative;
+
+    min-height:85vh;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #0D0A63,
+        #1E8BFF
+    );
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(95,213,208,.20),
+    transparent 45%);
+
+}
+
+.careers-hero h1{
+
+    color:#fff;
+
+    font-size:60px;
+
+    font-weight:700;
+
+    line-height:1.15;
+
+    margin:20px 0;
+
+}
+
+.careers-hero h1 span{
+
+    display:block;
+
+    color:#5FD5D0;
+
+}
+
+.careers-hero p{
+
+    color:rgba(255,255,255,.90);
+
+    line-height:1.9;
+
+    font-size:18px;
+
+    max-width:600px;
+
+}
+
+.careers-image{
+
+    position:relative;
+
+}
+
+.careers-image img{
+
+    width:100%;
+
+    height:560px;
+
+    object-fit:cover;
+
+    border-radius:28px;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.20);
+
+}
+
+.career-card{
+
+    position:absolute;
+
+    bottom:30px;
+
+    left:-30px;
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:center;
+
+    background:#fff;
+
+    padding:22px;
+
+    border-radius:20px;
+
+    width:300px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+.career-card i{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:#0D0A63;
+
+    color:#fff;
+
+    font-size:28px;
+
+}
+
+.career-card h5{
+
+    margin:0;
+
+    color:#24324B;
+
+}
+
+.career-card p{
+
+    margin:6px 0 0;
+
+    color:#64748B;
+
+    font-size:13px;
+
+}
+
+@media(max-width:992px){
+
+.careers-hero{
+
+padding:90px 0;
+
+}
+
+.careers-hero h1{
+
+font-size:42px;
+
+}
+
+.careers-image img{
+
+height:420px;
+
+margin-top:40px;
+
+}
+
+.career-card{
+
+left:15px;
+
+width:260px;
+
+}
+
+}
+
+/*=========================================
+    WHY JOIN EMMANEX
+=========================================*/
+
+.why-emmanex{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+}
+
+.section-title{
+
+    font-size:46px;
+
+    font-weight:700;
+
+    color:#24324B;
+
+    line-height:1.2;
+
+    margin:20px 0 25px;
+
+}
+
+.section-description{
+
+    color:#64748B;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+    margin-bottom:20px;
+
+}
+
+/* Feature Cards */
+
+.career-feature{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:24px;
+
+    height:100%;
+
+    transition:.35s;
+
+    border:1px solid rgba(13,10,99,.05);
+
+    box-shadow:0 15px 40px rgba(15,23,42,.05);
+
+}
+
+.career-feature:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 60px rgba(15,23,42,.10);
+
+}
+
+.career-icon{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:20px;
+
+    background:rgba(30,139,255,.10);
+
+    color:#1E8BFF;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+    transition:.35s;
+
+}
+
+.career-feature:hover .career-icon{
+
+    background:#0D0A63;
+
+    color:#fff;
+
+    transform:rotate(-8deg);
+
+}
+
+.career-feature h4{
+
+    font-size:22px;
+
+    color:#24324B;
+
+    margin-bottom:15px;
+
+}
+
+.career-feature p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    margin:0;
+
+}
+
+@media(max-width:992px){
+
+.why-emmanex{
+
+padding:80px 0;
+
+}
+
+.section-title{
+
+font-size:38px;
+
+}
+
+}
+
+/*=========================================
+    LIFE AT EMMANEX
+=========================================*/
+
+.life-emmanex{
+
+    padding:120px 0;
+
+    background:#fff;
+
+}
+
+.life-gallery{
+
+    position:relative;
+
+    min-height:620px;
+
+}
+
+.gallery-main{
+
+    width:72%;
+
+    height:620px;
+
+    object-fit:cover;
+
+    border-radius:28px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.gallery-small{
+
+    position:absolute;
+
+    right:0;
+
+    width:42%;
+
+    object-fit:cover;
+
+    border-radius:24px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.gallery-small.top{
+
+    top:0;
+
+    height:285px;
+
+}
+
+.gallery-small.bottom{
+
+    bottom:0;
+
+    height:285px;
+
+}
+
+.culture-highlights{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.culture-highlights div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#24324B;
+
+    font-weight:600;
+
+}
+
+.culture-highlights i{
+
+    color:#1E8BFF;
+
+    font-size:18px;
+
+}
+
+@media(max-width:992px){
+
+.life-emmanex{
+
+padding:80px 0;
+
+}
+
+.life-gallery{
+
+min-height:auto;
+
+}
+
+.gallery-main{
+
+width:100%;
+
+height:420px;
+
+}
+
+.gallery-small{
+
+display:none;
+
+}
+
+.culture-highlights{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/*=========================================
+    EMPLOYEE BENEFITS
+=========================================*/
+
+.employee-benefits{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+}
+
+.benefit-box{
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.45);
+
+    border-radius:28px;
+
+    padding:40px 35px;
+
+    height:100%;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(15,23,42,.05);
+
+}
+
+.benefit-box:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 60px rgba(15,23,42,.10);
+
+}
+
+.benefit-icon{
+
+    width:75px;
+
+    height:75px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:linear-gradient(
+        135deg,
+        #0D0A63,
+        #1E8BFF
+    );
+
+    color:#fff;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+    transition:.35s;
+
+}
+
+.benefit-box:hover .benefit-icon{
+
+    transform:rotate(-8deg) scale(1.08);
+
+}
+
+.benefit-box h4{
+
+    color:#24324B;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+.benefit-box p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    margin:0;
+
+}
+
+@media(max-width:992px){
+
+.employee-benefits{
+
+padding:80px 0;
+
+}
+
+}
+
+/*=========================================
+    CAREER OPPORTUNITIES
+=========================================*/
+
+.career-opportunities{
+
+    padding:120px 0;
+
+    background:#fff;
+
+}
+
+/* Vacancy Card */
+
+.vacancy-card{
+
+    background:#F8FAFC;
+
+    padding:45px;
+
+    border-radius:28px;
+
+    border:1px solid rgba(13,10,99,.05);
+
+}
+
+.vacancy-card h3{
+
+    margin:25px 0 20px;
+
+    color:#24324B;
+
+    font-size:30px;
+
+}
+
+.vacancy-card p{
+
+    color:#64748B;
+
+    line-height:1.9;
+
+}
+
+/* Status Badge */
+
+.status-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#EEF7FF;
+
+    color:#1E8BFF;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+}
+
+.status-badge i{
+
+    font-size:18px;
+
+}
+
+/* Roles */
+
+.future-roles{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:35px;
+
+}
+
+.future-roles span{
+
+    padding:12px 18px;
+
+    background:#fff;
+
+    border-radius:50px;
+
+    border:1px solid rgba(13,10,99,.08);
+
+    color:#24324B;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.future-roles span:hover{
+
+    background:#0D0A63;
+
+    color:#fff;
+
+}
+
+/* Resume Card */
+
+.resume-card{
+
+    background:linear-gradient(
+        135deg,
+        #0D0A63,
+        #1E8BFF
+    );
+
+    color:#fff;
+
+    border-radius:30px;
+
+    padding:55px 40px;
+
+    text-align:center;
+
+    height:100%;
+
+}
+
+.resume-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:0 auto 30px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.15);
+
+    font-size:40px;
+
+}
+
+.resume-card h3{
+
+    margin-bottom:20px;
+
+}
+
+.resume-card p{
+
+    color:rgba(255,255,255,.90);
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+@media(max-width:992px){
+
+.career-opportunities{
+
+padding:80px 0;
+
+}
+
+.vacancy-card{
+
+padding:35px;
+
+}
+
+}

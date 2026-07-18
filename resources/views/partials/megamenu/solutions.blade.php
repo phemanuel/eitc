@@ -10,7 +10,7 @@
 
             <h5>Education</h5>
 
-            <a href="#" class="mega-item">
+            <a href="{{ route('solutions') }}#school-management" class="mega-item">
 
                 <i class="bi bi-mortarboard-fill"></i>
 
@@ -24,7 +24,7 @@
 
             </a>
 
-            <a href="#" class="mega-item">
+            <a href="{{ route('solutions') }}#cbt-platform" class="mega-item">
 
                 <i class="bi bi-pc-display"></i>
 
@@ -38,7 +38,7 @@
 
             </a>
 
-            <a href="#" class="mega-item">
+            <a href="{{ route('solutions') }}#elearning-portal" class="mega-item">
 
                 <i class="bi bi-book-half"></i>
 
@@ -62,7 +62,7 @@
 
             <h5>Business Solutions</h5>
 
-            <a href="#" class="mega-item">
+            <a href="{{ route('solutions') }}#pos-inventory" class="mega-item">
 
                 <i class="bi bi-cart-check-fill"></i>
 
@@ -76,9 +76,9 @@
 
             </a>
 
-            <a href="#" class="mega-item">
+            <a href="{{ route('solutions') }}#erp-solutions" class="mega-item">
 
-                <i class="bi bi-building-fill-gear"></i>
+                <i class="bi bi-building-fill-gear"s></i>
 
                 <div>
 
@@ -90,7 +90,7 @@
 
             </a>
 
-            <a href="#" class="mega-item">
+            <a href="{{ route('solutions') }}#hospital-management" class="mega-item">
 
                 <i class="bi bi-hospital-fill"></i>
 

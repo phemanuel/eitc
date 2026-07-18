@@ -68,20 +68,15 @@
 
                                 <a href="{{route('about')}}">
                                     About Us
-                                </a>
+                                </a>                               
 
 
-                                <a href="#">
-                                    Our Team
-                                </a>
-
-
-                                <a href="#">
+                                <a href="{{route('process')}}">
                                     Our Process
                                 </a>
 
 
-                                <a href="#">
+                                <a href="{{route('career')}}">
                                     Careers
                                 </a>
 
@@ -133,7 +128,7 @@
 
 
 
-                        <li>
+                        <!-- <li>
                             <a href="#">
                                 Portfolio
                             </a>
@@ -144,11 +139,11 @@
                             <a href="#">
                                 Insights
                             </a>
-                        </li>
+                        </li> -->
 
 
                         <li>
-                            <a href="#">
+                            <a href="{{route('contact')}}">
                                 Contact
                             </a>
                         </li>

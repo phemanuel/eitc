@@ -68,6 +68,11 @@ href="{{ asset('assets/css/style.css') }}">
 <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/page-navigation.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/pages/about.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/pages/process-page.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/pages/services.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/pages/career.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/pages/solutions.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/pages/contact-page.css') }}" rel="stylesheet">
 
 
 </head>
@@ -106,6 +111,7 @@ href="{{ asset('assets/css/style.css') }}">
 <script src="{{ asset('assets/js/header.js') }}"></script>
 <script src="{{ asset('assets/js/page-navigation.js') }}"></script>
 <script src="{{ asset('assets/js/about-page.js') }}"></script>
+<script src="{{ asset('assets/js/services-page.js') }}"></script>
 <script src="{{ asset('assets/js/scroll-top.js') }}"></script>
 
 <script src="{{ asset('assets/js/main.js') }}"></script>

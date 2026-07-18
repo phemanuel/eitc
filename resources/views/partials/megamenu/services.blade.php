@@ -10,7 +10,7 @@
 
             <h5>Development</h5>
 
-            <a href="#" class="mega-item">
+            <a href="{{ route('services') }}#software-development" class="mega-item">
 
                 <i class="bi bi-code-slash"></i>
 
@@ -24,7 +24,7 @@
 
             </a>
 
-            <a href="#" class="mega-item">
+            <a href="{{ route('services') }}#web-development" class="mega-item">
 
                 <i class="bi bi-globe"></i>
 
@@ -38,7 +38,7 @@
 
             </a>
 
-            <a href="#" class="mega-item">
+            <a href="{{ route('services') }}#mobile-development" class="mega-item">
 
                 <i class="bi bi-phone"></i>
 
@@ -63,7 +63,7 @@
 
             <h5>Infrastructure</h5>
 
-            <a href="#" class="mega-item">
+            <a href="{{ route('services') }}#cloud-solutions" class="mega-item">
 
                 <i class="bi bi-cloud"></i>
 
@@ -77,7 +77,7 @@
 
             </a>
 
-            <a href="#" class="mega-item">
+            <a href="{{ route('services') }}#networking" class="mega-item">
 
                 <i class="bi bi-router"></i>
 
@@ -91,7 +91,7 @@
 
             </a>
 
-            <a href="#" class="mega-item">
+            <a href="{{ route('services') }}#cybersecurity" class="mega-item">
 
                 <i class="bi bi-shield-lock"></i>
 
