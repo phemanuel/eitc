@@ -617,7 +617,7 @@
 
                     <p>
 
-                        Share your résumé with us and we'll contact you when
+                        Share your resume with us and we'll contact you when
                         opportunities that match your skills and experience
                         become available.
 
